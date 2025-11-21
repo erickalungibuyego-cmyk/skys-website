@@ -1,0 +1,260 @@
+
+
+ 
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.mm p{
+    text-align: center;
+    padding-right: 5px;
+}
+button{
+    color: white;
+    background-color: #e01414;
+    border: none;
+    height: 20px;
+    width: 100px;
+    border-radius: 100px;
+    font-weight: bold;
+    font-style: arial;
+    cursor: pointer;
+   justify-content: center;
+   
+   
+}
+.move{
+    background-color: azure;
+    padding-bottom: 10px;
+}
+h3{
+    color: orange;
+    margin: 0;
+    padding-top: 50px;
+}
+
+header {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+background-color: #982929;
+    height: 30px;
+   
+    
+    
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+     
+
+}
+
+header nav ul li {
+    margin-right: 50px;
+}
+
+header nav a {
+    color: rgb(246, 243, 247);
+    text-decoration: none;
+    font-size: large;
+    padding-left: 0;
+    margin-right: 8px;
+        
+        transition: opacity 0.1s;
+}
+
+.move{
+    color: rgb(224, 115, 7);
+    margin: 0;
+    position: relative;
+}
+
+header nav a:hover{
+    background-color: white;
+    border-radius: 20px;
+    opacity: 0.8;
+    
+}
+
+header nav a:active{
+    background-color: #a9a4a4;
+    opacity: 0.8;
+    
+}
+
+
+.nn{
+    background-color: rgb(233, 81, 16);
+    color: #f7f7f7;
+    height: 400px;
+    margin: 0;
+    border-radius: 10px;
+  
+}
+
+
+.mm{
+   height: 25vh;
+   background-color: #ebdddd;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   border-radius: 10px;
+   
+     
+}
+section{
+     background-color: #f7f7f7;
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section h1 {
+    font-size: 36px;
+   text-align: center;
+    padding: 5px;
+    color: orange;
+    margin: 0;
+    
+   
+}
+
+
+footer {
+    background-color: #e810cb;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+
+}
+
+    .about{
+    
+        text-align: justify;
+        font-family: Arial;
+        color: rgb(74, 74, 74);
+        background-color: antiquewhite;
+        padding: 5vh;
+        margin: 0;
+
+    }
+    .about h1{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: oblique;
+    }
+      .qq{
+    display: flow-root;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    background:#ff994f;
+    cursor: pointer;
+}
+    
+    .qq img{
+      border-radius: 50px;
+    }
+   
+    .photo{
+      display: inline-block;
+      margin: 5px;
+      align-content: center;
+      padding: 50px;
+    }
+
+    .photo img{
+       border: 1px solid white;
+        width: 200px;
+         box-shadow: rgb(96, 92, 92) 0 0 10px;
+        border-radius: 50%;
+}  
+p{
+  margin: 0;
+  padding-bottom: 5px;
+} 
+h3{
+  margin: 0;
+  padding: 0;
+}
+ 
+
+    .photo .description{
+      padding: 10px;
+      text-align: center;
+    }
+    .photo:hover{
+      border: 1px solid hsl(0, 0, 20%);
+
+    }
+    .borde{
+      text-align: center;
+      font-weight: bolder;
+      font-size: larger;
+      background-color: rgb(245, 197, 109);
+      margin-top: 50px;
+      margin: 0;
+    }
+    .border{
+      background-color: rgb(82, 78, 78);
+      color: whitesmoke;
+
+    }
+    
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   .gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 15px;
+
+   }
+   .gallery img{
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+
+   }
+   @media (pointer: coarse) {
+    .gallery{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandaatory;
+    gap: 0;
+    }
+      .gallery::-webkit-scrollbar{
+        display: none;
+      }
+      .student{
+        flex: 0 0 75%;
+        scroll-snap-align: start;
+        padding-left: 15px;
+
+      }
+   }
+   @media (pointer: coarse) and (width >=768px) {
+    .student{
+        flex: 0 0 40%;
+    }
+   }
+   
+ 

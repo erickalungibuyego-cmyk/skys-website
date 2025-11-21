@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>skyshighschool</title>
+   
+</head>
+<body>
+   
+    
+        <section class="gallery">
+            
+            <dv class="student">
+            <img src="9b798f6e-2930-4978-85d9-a68b8ab97ef9.jpg" alt="Smart Students" >
+            </dv>
+        <div class="student">
+            <img src="LLME2611.jpg" alt="Director and Religious Leaders" >
+           
+        </div>
+            
+         <div class="student">
+             <img src="LLME2927.jpg" alt="Director and Religious Leaders" >
+            
+         </div>
+           
+        
+        </section>
+
+         <style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   .gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 15px;
+
+   }
+   .gallery img{
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+
+   }
+   @media (pointer: coarse) {
+    .gallery{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandaatory;
+    gap: 0;
+    }
+      .gallery::-webkit-scrollbar{
+        display: none;
+      }
+      .student{
+        flex: 0 0 75%;
+        scroll-snap-align: start;
+        padding-left: 15px;
+
+      }
+   }
+   @media (pointer: coarse) and (width >=768px) {
+    .student{
+        flex: 0 0 40%;
+    }
+   }
+   </style>
+ 
+          
+
